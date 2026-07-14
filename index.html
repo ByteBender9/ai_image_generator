@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6b6c5c0c1d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<header>
+    <h1><i class="fa-solid fa-wand-magic-sparkles"></i> AI Image Generator</h1>
+    <p>Create beautiful images using your imagination.</p>
+</header>
+
+<main>
+
+    <section class="generator-box">
+
+        <label for="prompt">
+            Enter your Prompt
+        </label>
+
+        <textarea
+            id="prompt"
+            maxlength="300"
+            placeholder="Example: A futuristic city at sunset..."
+        ></textarea>
+
+        <div class="bottom-row">
+
+            <span id="count">
+                0 / 300
+            </span>
+
+            <button id="clearBtn">
+                Clear
+            </button>
+
+        </div>
+
+        <button id="generateBtn">
+            Generate Image
+        </button>
+
+    </section>
+
+    <section id="loading" class="hidden">
+
+        <div class="loader"></div>
+
+        <p>Generating image...</p>
+
+    </section>
+
+    <section id="result" class="hidden">
+
+        <h2>Your Image</h2>
+
+        <img
+            id="generatedImage"
+            src=""
+            alt="Generated Image"
+        >
+
+        <div class="buttons">
+
+            <button id="downloadBtn">
+                Download
+            </button>
+
+            <button id="againBtn">
+                Generate Another
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        Built using HTML, CSS and JavaScript
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
