@@ -76,7 +76,7 @@ Enter a prompt, click **Generate Image**, and the application displays a generat
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 ---
 
