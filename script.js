@@ -46,8 +46,7 @@ generateBtn.addEventListener("click", async () => {
 
     const text = prompt.value.trim();
 
-    if(text === "")
-    {
+    if (text === "") {
         alert("Please enter a prompt.");
         return;
     }
@@ -60,12 +59,12 @@ generateBtn.addEventListener("click", async () => {
 
 
 
-    try{
+    try {
 
-        await new Promise(resolve => setTimeout(resolve,3000));
+        await new Promise(resolve => setTimeout(resolve, 3000));
 
         const imageURL =
-        `https://picsum.photos/800/500?random=${Date.now()}`;
+            `https://picsum.photos/800/500?random=${Date.now()}`;
 
         image.src = imageURL;
 
@@ -83,9 +82,7 @@ generateBtn.addEventListener("click", async () => {
         loading.classList.add("hidden");
         result.classList.remove("hidden");
 
-    }
-
-    catch(error){
+    } catch (error) {
 
         alert("Something went wrong.");
 
@@ -93,9 +90,7 @@ generateBtn.addEventListener("click", async () => {
 
         loading.classList.add("hidden");
 
-    }
-
-    finally{
+    } finally {
 
         generateBtn.disabled = false;
         generateBtn.innerText = "Generate Image";
@@ -109,7 +104,7 @@ generateBtn.addEventListener("click", async () => {
 
 // Generate Another
 
-againBtn.addEventListener("click",()=>{
+againBtn.addEventListener("click", () => {
 
     result.classList.add("hidden");
 
