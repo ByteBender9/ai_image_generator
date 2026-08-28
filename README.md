@@ -85,3 +85,8 @@ This project is licensed under the MIT License. See the LICENSE file for details
 **Kushal Sarkar**
 
 GitHub: https://github.com/ByteBender9
+
+## ⭐ Support
+
+If you like this project, consider giving it a **⭐ Star** on GitHub.
+Feedback, suggestions, and contributions are always welcome.
